@@ -135,7 +135,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/elearning.jpg",
+    image: "",
     tags: [
       { id: 1, name: "Laravel API", path: "/assets/logos/laravel.svg" },
       { id: 2, name: "MySQL", path: "/assets/logos/mysql.svg" },
@@ -153,7 +153,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/elearning.jpg",
+    image: "",
     tags: [
       { id: 1, name: "Laravel API", path: "/assets/logos/laravel.svg" },
       { id: 2, name: "MySQL", path: "/assets/logos/mysql.svg" },
