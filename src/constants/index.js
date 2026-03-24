@@ -68,7 +68,7 @@ export const myProjects = [
       "Integrated with over 500+ healthcare provider facilities across Indonesia.",
       "Developed end-to-end feature flow for both patient mobile experience and backend system architecture improvements."
     ],
-    href: "",
+    href: "https://play.google.com/store/apps/details?id=it.telkomedika.tmhealth&hl=id",
     logo: "",
     image: "/assets/projects/thealth.png", // Versi terbaru sebagai cover utama
     tags: [
