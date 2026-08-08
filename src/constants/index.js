@@ -206,6 +206,53 @@ export const myProjects = [
       { id: 2, name: "Nest.js", path: "/assets/logos/nestjs.svg" },
     ],
   },
+  {
+    id: 10,
+    title: "AI OCR API Service",
+    description:
+      "OCR (Optical Character Recognition) API service that processes images and extracts structured text data using AI.",
+    subDescription: [
+      "Built an OCR (Optical Character Recognition) API service that processes images and extracts structured text data using AI.",
+      "The system is designed to handle real-time requests via webhook and return clean, usable responses for integration with mobile and web applications.",
+    ],
+    href: "",
+    logo: "",
+    image: "/assets/projects/API Service (OCR as a Service).jpeg",
+    tags: [
+      { id: 1, name: "n8n Automation", path: "/assets/logos/n8n.svg" },
+    ],
+  },
+  {
+    id: 11,
+    title: "Email OCR Automation System",
+    description:
+      "Automated system reading incoming emails, extracting attachments, and using OCR to structure document data.",
+    subDescription: [
+      "Developed an automated system that reads incoming emails, extracts attachments (PDF/images), and processes them using OCR to convert unstructured documents into structured data.",
+    ],
+    href: "",
+    logo: "",
+    image: "/assets/projects/Automation (Email → OCR → Data).jpeg",
+    tags: [
+      { id: 1, name: "n8n Automation", path: "/assets/logos/n8n.svg" },
+    ],
+  },
+  {
+    id: 12,
+    title: "AI Wellness Recommendation Engine",
+    description:
+      "AI-powered system generating personalized wellness recommendations including meal plans, sleep schedules, and activities.",
+    subDescription: [
+      "Built an AI-powered system that generates personalized wellness plans based on user input.",
+      "The system processes data through AI and produces structured recommendations such as meal plans, sleep schedules, hydration, and activities.",
+    ],
+    href: "",
+    logo: "",
+    image: "/assets/projects/AI Feature : Product (Wellness Recommendation Engine).jpeg",
+    tags: [
+      { id: 1, name: "n8n Automation", path: "/assets/logos/n8n.svg" },
+    ],
+  },
 ];
 
 export const mySocials = [
