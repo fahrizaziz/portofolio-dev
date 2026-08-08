@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { motion } from "motion/react";
 
 const ProjectDetails = ({
@@ -7,18 +8,19 @@ const ProjectDetails = ({
   image,
   tags,
   href,
+  links,
   closeModal,
 }) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm">
       <motion.div
-        className="relative max-w-2xl w-full border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10"
+        className="relative max-w-2xl w-full border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10 max-h-[90vh] overflow-y-auto"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
       >
         <button
           onClick={closeModal}
-          className="absolute p-2 rounded-sm top-5 right-5 bg-midnight hover:bg-gray-500"
+          className="absolute p-2 rounded-sm top-5 right-5 bg-midnight hover:bg-gray-500 z-10"
         >
           <img src="assets/close.svg" className="w-6 h-6" alt="close" />
         </button>
@@ -48,7 +50,7 @@ const ProjectDetails = ({
             </p>
           ))}
 
-          <div className="flex items-center justify-between mt-4">
+          <div className="flex items-center justify-between mt-4 flex-wrap gap-4">
             <div className="flex gap-3 flex-wrap">
               {tags?.map((tag) => (
                 <img
@@ -61,7 +63,22 @@ const ProjectDetails = ({
               ))}
             </div>
 
-            {href ? (
+            {links && links.length > 0 ? (
+              <div className="flex gap-4 flex-wrap">
+                {links.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation text-white hover:text-primary"
+                  >
+                    {link.label}{" "}
+                    <img src="assets/arrow-up.svg" className="size-4" alt="arrow" />
+                  </a>
+                ))}
+              </div>
+            ) : href ? (
               <a
                 href={href}
                 target="_blank"

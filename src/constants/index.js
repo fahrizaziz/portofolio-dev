@@ -159,6 +159,53 @@ export const myProjects = [
       { id: 2, name: "MySQL", path: "/assets/logos/mysql.svg" },
     ],
   },
+  {
+    id: 8,
+    title: "Fortis",
+    description:
+      "Business productivity application designed to enhance team efficiency and streamline operations.",
+    subDescription: [
+      "Contributed to the maintenance and continuous improvement of Fortis, a business productivity application, by resolving issues, optimizing performance, and supporting reliable system operations to improve overall user productivity.",
+    ],
+    href: "https://play.google.com/store/apps/details?id=com.salvus.fortis&hl=id",
+    links: [
+      {
+        label: "Google Play",
+        url: "https://play.google.com/store/apps/details?id=com.salvus.fortis&hl=id",
+      },
+    ],
+    logo: "",
+    image: "/assets/projects/fortis.png",
+    tags: [
+      { id: 1, name: "Flutter", path: "/assets/logos/flutter.svg" },
+    ],
+  },
+  {
+    id: 9,
+    title: "My Ebenefit",
+    description:
+      "Insurance management platform enabling users to manage policies, track claims, and locate healthcare facilities.",
+    subDescription: [
+      "Developed and maintained MyEquity App, an insurance management platform that allows users to access policy details, track claims and payments, find nearby healthcare providers, and get support through FAQ and direct contact features.",
+    ],
+    href: "https://play.google.com/store/apps/details?id=id.myequity.corporate&hl=id",
+    links: [
+      {
+        label: "Google Play",
+        url: "https://play.google.com/store/apps/details?id=id.myequity.corporate&hl=id",
+      },
+      {
+        label: "App Store",
+        url: "https://apps.apple.com/id/app/myebenefit/id1447369902?l=id",
+      },
+    ],
+    logo: "",
+    image: "/assets/projects/e-benefit.png",
+    tags: [
+      { id: 1, name: "Flutter", path: "/assets/logos/flutter.svg" },
+      { id: 2, name: "Nest.js", path: "/assets/logos/nestjs.svg" },
+    ],
+  },
 ];
 
 export const mySocials = [
