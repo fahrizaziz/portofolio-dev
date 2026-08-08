@@ -64,7 +64,7 @@ export const myProjects = [
       "Digital healthcare platform developed in two major phases with different architectures and technology stacks. A long-term scalable health system supporting nationwide medical services.",
     subDescription: [
       "TM Health v1 – Built using Flutter and Laravel with MySQL database. Responsible for building mobile application features, health service flow, and API backend integration.",
-      "TM Health v2 – Reengineered using microservice architecture with React.js, Nest.js, Flutter, MySQL, and MongoDB delivering improved scalability, modular system separation, and performance optimization.",
+      "TM Health v2 – Reengineered using microservice architecture with React.js, Nest.js, Flutter, MySQL, MongoDB, and n8n delivering improved scalability, automated workflow integration, modular system separation, and performance optimization.",
       "Integrated with over 500+ healthcare provider facilities across Indonesia.",
       "Developed end-to-end feature flow for both patient mobile experience and backend system architecture improvements."
     ],
@@ -78,6 +78,7 @@ export const myProjects = [
       { id: 4, name: "Nest.js", path: "/assets/logos/nestjs.svg" },
       { id: 5, name: "MySQL", path: "/assets/logos/mysql.svg" },
       { id: 6, name: "MongoDB", path: "/assets/logos/mongodb.svg" },
+      { id: 7, name: "n8n Automation", path: "/assets/logos/n8n.svg" },
     ],
     versions: {
       v1: {
@@ -92,7 +93,7 @@ export const myProjects = [
       },
       v2: {
         title: "TM Health v2",
-        stack: ["Flutter", "React.js", "Nest.js", "MySQL", "MongoDB"],
+        stack: ["Flutter", "React.js", "Nest.js", "MySQL", "MongoDB", "n8n"],
         image: "/assets/projects/tmhealth-v2-cover.png",
         images: [
           "/assets/projects/tmhealth-v2-1.png",
