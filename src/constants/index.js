@@ -273,6 +273,23 @@ export const myProjects = [
       { id: 2, name: "MSSQL", path: "/assets/logos/microsoftsqlserver.svg" },
     ],
   },
+  {
+    id: 14,
+    title: "Core API System with SNAP BI Standard",
+    description:
+      "Central gateway Core API system built on SNAP BI (Bank Indonesia) specifications for secure banking and payment integration.",
+    subDescription: [
+      "Designed and developed a Core API system based on SNAP BI (Bank Indonesia) standard to handle secure, scalable, and standardized communication between internal services and external banking/payment providers.",
+      "The system acts as a central gateway that manages authentication, request validation, transaction processing, and response normalization according to SNAP BI specifications.",
+    ],
+    href: "",
+    logo: "",
+    image: "",
+    tags: [
+      { id: 1, name: "Nest.js", path: "/assets/logos/nestjs.svg" },
+      { id: 2, name: "MySQL", path: "/assets/logos/mysql.svg" },
+    ],
+  },
 ];
 
 export const mySocials = [
