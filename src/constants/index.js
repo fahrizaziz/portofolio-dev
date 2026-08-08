@@ -130,7 +130,7 @@ export const myProjects = [
     description:
       "Health claim integration API connected to external core systems for real-time status reporting.",
     subDescription: [
-      "Developed backend API service using Laravel.",
+      "Developed backend API service using Laravel and Nest.js.",
       "Integrated with corporate core health system.",
       "Delivered fast & secure claim synchronization layer.",
     ],
@@ -139,7 +139,8 @@ export const myProjects = [
     image: "",
     tags: [
       { id: 1, name: "Laravel API", path: "/assets/logos/laravel.svg" },
-      { id: 2, name: "MySQL", path: "/assets/logos/mysql.svg" },
+      { id: 2, name: "Nest.js", path: "/assets/logos/nestjs.svg" },
+      { id: 3, name: "MySQL", path: "/assets/logos/mysql.svg" },
     ],
   },
   {
@@ -148,7 +149,7 @@ export const myProjects = [
     description:
       "API service for registering new claim members and medical program participants.",
     subDescription: [
-      "Built API endpoint for New Member Registration.",
+      "Built API endpoint using Laravel and Nest.js for New Member Registration.",
       "Integrated with internal claim processing pipeline.",
       "Secure data process ensuring validation & auditing.",
     ],
@@ -157,7 +158,8 @@ export const myProjects = [
     image: "",
     tags: [
       { id: 1, name: "Laravel API", path: "/assets/logos/laravel.svg" },
-      { id: 2, name: "MySQL", path: "/assets/logos/mysql.svg" },
+      { id: 2, name: "Nest.js", path: "/assets/logos/nestjs.svg" },
+      { id: 3, name: "MySQL", path: "/assets/logos/mysql.svg" },
     ],
   },
   {
