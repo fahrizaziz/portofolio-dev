@@ -256,6 +256,23 @@ export const myProjects = [
       { id: 1, name: "n8n Automation", path: "/assets/logos/n8n.svg" },
     ],
   },
+  {
+    id: 13,
+    title: "SNAP BI API Integration (Bank Indonesia)",
+    description:
+      "Integration with Standar Nasional Open API Pembayaran (SNAP BI) for standardized banking and payment services.",
+    subDescription: [
+      "Implemented integration with SNAP BI (Standar Nasional Open API Pembayaran Bank Indonesia) to enable secure and standardized communication between systems and banking/payment services.",
+      "The system ensures compliance with national payment standards while supporting scalable financial transactions.",
+    ],
+    href: "",
+    logo: "",
+    image: "",
+    tags: [
+      { id: 1, name: "Nest.js", path: "/assets/logos/nestjs.svg" },
+      { id: 2, name: "MSSQL", path: "/assets/logos/microsoftsqlserver.svg" },
+    ],
+  },
 ];
 
 export const mySocials = [
