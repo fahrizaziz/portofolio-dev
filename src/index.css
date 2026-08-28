@@ -136,3 +136,284 @@ body {
 .field-input-focus {
   @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20;
 }
+
+/* ==========================================================================
+   LIGHT MODE OVERRIDES
+   ========================================================================== */
+
+html.light body {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+/* App Root Container */
+html.light div.min-h-screen.bg-\[\#030412\],
+html.light section.bg-\[\#030412\],
+html.light div.bg-\[\#030412\] {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+/* Navbar Header */
+html.light header.bg-\[\#030412\]\/80 {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8) !important;
+}
+
+/* Brand Logo (Turn to black in Light Mode) */
+html.light img.brightness-0.invert {
+  filter: brightness(0) !important;
+}
+
+/* Navbar Navigation Links */
+html.light a.text-neutral-300 {
+  color: #334155 !important;
+}
+
+html.light a.text-neutral-300:hover {
+  color: #0f172a !important;
+}
+
+html.light a.border-white {
+  border-color: #0f172a !important;
+  color: #0f172a !important;
+}
+
+html.light a.border-white:hover {
+  background-color: #0f172a !important;
+  color: #ffffff !important;
+}
+
+/* Text Colors */
+html.light h1.text-white,
+html.light h2.text-white,
+html.light h3.text-white,
+html.light span.text-white,
+html.light p.text-white,
+html.light div.text-white {
+  color: #0f172a !important;
+}
+
+html.light p.text-neutral-300,
+html.light p.text-neutral-400,
+html.light span.text-neutral-400,
+html.light span.text-neutral-300 {
+  color: #475569 !important;
+}
+
+/* Cards & Section Boxes (Skills, Projects, Contact, Experiences) */
+html.light div.bg-\[\#151521\]\/90,
+html.light div.bg-\[\#12131F\]\/90,
+html.light div.bg-\[\#151521\],
+html.light div.bg-\[\#0f101d\],
+html.light div.bg-\[\#06091f\] {
+  background-color: #ffffff !important;
+  border-color: rgba(226, 232, 240, 0.9) !important;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08) !important;
+  color: #0f172a !important;
+}
+
+/* Project Cards in Light Mode */
+html.light div.aspect-\[16\/10\].bg-\[\#0f101d\] {
+  background-color: #f1f5f9 !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Skill Gauge Rings Background Track */
+html.light circle[stroke="#232438"] {
+  stroke: #cbd5e1 !important;
+}
+
+/* Connected Tab Bar Container */
+html.light div.bg-\[\#12131F\]\/90 {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+}
+
+/* Form Inputs in Light Mode */
+html.light input.field-input,
+html.light textarea.field-input {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.light input.field-input::placeholder,
+html.light textarea.field-input::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Social Icons & Circle Buttons in Light Mode */
+html.light a.rounded-full.border-white\/40,
+html.light button.rounded-full.border-white\/40 {
+  border-color: #cbd5e1 !important;
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+html.light a.rounded-full.border-white\/40:hover,
+html.light button.rounded-full.border-white\/40:hover {
+  background-color: #0f172a !important;
+  color: #ffffff !important;
+}
+
+/* Social SVG Icons (Turn dark black in Light Mode) */
+html.light a.rounded-full.border-white\/40 img {
+  filter: brightness(0) !important;
+}
+
+html.light a.rounded-full.border-white\/40:hover img {
+  filter: brightness(0) invert(1) !important;
+}
+
+/* Mobile Menu Toggle Icon */
+html.light button[aria-label="Toggle Navigation"] img {
+  filter: brightness(0) !important;
+}
+
+/* Mobile Drawer Background */
+html.light div.lg\:hidden.bg-\[\#06091f\] {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+}
+
+/* Hero Pill Tagline ("Welcome to my Portfolio") */
+html.light div.from-purple-900\/70 {
+  background: linear-gradient(to right, #f3e8ff, #e0e7ff) !important;
+  border-color: #c084fc !important;
+  color: #581c87 !important;
+}
+
+/* Let's Connect Circle Arrow Icon */
+html.light span.border-white {
+  border-color: #0f172a !important;
+}
+
+html.light span.border-white svg {
+  fill: #0f172a !important;
+}
+
+/* Project Card Bottom Overlay in Light Mode */
+html.light div.from-black\/90 {
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0)) !important;
+}
+
+html.light div.from-black\/90 h3 {
+  color: #0f172a !important;
+}
+
+html.light div.from-black\/90 p {
+  color: #475569 !important;
+}
+
+/* Project Details Modal Light Mode Overrides */
+html.light div.backdrop-blur-sm > div.relative.max-w-2xl {
+  background: #ffffff !important;
+  border-color: rgba(226, 232, 240, 0.9) !important;
+  color: #0f172a !important;
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25) !important;
+}
+
+html.light div.backdrop-blur-sm button {
+  background-color: #f1f5f9 !important;
+}
+
+html.light div.backdrop-blur-sm button img {
+  filter: brightness(0) !important;
+}
+
+html.light div.backdrop-blur-sm div.bg-neutral-900 {
+  background-color: #f1f5f9 !important;
+  color: #64748b !important;
+}
+
+html.light div.backdrop-blur-sm img.bg-neutral-800 {
+  background-color: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.light div.backdrop-blur-sm a.text-white {
+  color: #0f172a !important;
+}
+
+html.light div.backdrop-blur-sm span.text-neutral-600 {
+  color: #94a3b8 !important;
+}
+
+/* Timeline Component Light Mode Overrides */
+html.light div.bg-midnight {
+  background-color: #f8fafc !important;
+}
+
+html.light div.bg-neutral-800.border-neutral-700 {
+  background-color: #ffffff !important;
+  border-color: #a855f7 !important;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.3) !important;
+}
+
+html.light div.via-neutral-700 {
+  background: linear-gradient(to bottom, transparent 0%, #cbd5e1 10%, #cbd5e1 90%, transparent 100%) !important;
+}
+
+html.light h3.text-neutral-300,
+html.light h3.text-neutral-400 {
+  color: #0f172a !important;
+}
+
+html.light h3.text-neutral-500 {
+  color: #64748b !important;
+}
+
+/* Contact Section Light Mode Overrides */
+html.light div.bg-primary {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.1) !important;
+  color: #0f172a !important;
+}
+
+html.light label.feild-label,
+html.light label.field-label {
+  color: #334155 !important;
+  font-weight: 600 !important;
+}
+
+html.light input.field-input,
+html.light textarea.field-input {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.light input.field-input:focus,
+html.light textarea.field-input:focus {
+  border-color: #a855f7 !important;
+  background-color: #ffffff !important;
+}
+
+html.light input.field-input::placeholder,
+html.light textarea.field-input::placeholder {
+  color: #94a3b8 !important;
+}
+
+html.light button.bg-radial {
+  background: linear-gradient(to right, #9333ea, #4f46e5) !important;
+  color: #ffffff !important;
+}
+
+/* Footer Light Mode Overrides */
+html.light section.c-space.pb-3 {
+  color: #475569 !important;
+}
+
+html.light section.c-space.pb-3 p {
+  color: #475569 !important;
+}
+
+html.light section.c-space.pb-3 div.bg-gradient-to-r {
+  background: linear-gradient(to right, transparent, #cbd5e1, transparent) !important;
+}
+
+html.light section.c-space.pb-3 img {
+  filter: brightness(0) !important;
+}

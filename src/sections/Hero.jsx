@@ -1,48 +1,31 @@
-import { Canvas, useFrame } from "@react-three/fiber";
+import React from "react";
 import HeroText from "../components/HeroText";
-import ParallaxBackground from "../components/ParallaxBackground";
-import { Astronaut } from "../components/Astronaut";
-import { Float } from "@react-three/drei";
-import { useMediaQuery } from "react-responsive";
-import { easing } from "maath";
-import { Suspense } from "react";
-import Loader from "../components/Loader";
+import SpaceBackground from "../components/SpaceBackground";
+import HeroVisual from "../components/HeroVisual";
 
 const Hero = () => {
-  const isMobile = useMediaQuery({ maxWidth: 853 });
   return (
-    <section className="flex items-start justify-center min-h-screen overflow-hidden md:items-start md:justify-start c-space">
-      <HeroText />
-      <ParallaxBackground />
-      <figure
-        className="absolute inset-0"
-        style={{ width: "100vw", height: "100vh" }}
-      >
-        <Canvas camera={{ position: [0, 1, 3] }}>
-          <Suspense fallback={<Loader />}>
-            <Float>
-              <Astronaut
-                scale={isMobile && 0.23}
-                position={isMobile && [0, -1.5, 0]}
-              />
-            </Float>
-            <Rig />
-          </Suspense>
-        </Canvas>
-      </figure>
+    <section
+      id="home"
+      className="relative min-h-screen w-full flex items-center justify-center overflow-hidden pt-20"
+    >
+      {/* Space Atmosphere & Background */}
+      <SpaceBackground />
+
+      {/* Hero Content Container */}
+      <div className="relative z-10 w-full max-w-[1536px] mx-auto px-6 sm:px-10 lg:px-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center min-h-[calc(100vh-80px)]">
+        {/* Left Column - Text Details */}
+        <div className="lg:col-span-7 flex flex-col justify-center">
+          <HeroText />
+        </div>
+
+        {/* Right Column - 3D Astronaut & Space Graphics */}
+        <div className="lg:col-span-5 flex items-center justify-center">
+          <HeroVisual />
+        </div>
+      </div>
     </section>
   );
 };
-
-function Rig() {
-  return useFrame((state, delta) => {
-    easing.damp3(
-      state.camera.position,
-      [state.mouse.x / 10, 1 + state.mouse.y / 10, 3],
-      0.5,
-      delta
-    );
-  });
-}
 
 export default Hero;

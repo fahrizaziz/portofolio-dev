@@ -1,3 +1,21 @@
+export const getExperienceDuration = (startDate = new Date(2021, 7, 1)) => {
+  const now = new Date();
+  let years = now.getFullYear() - startDate.getFullYear();
+  let months = now.getMonth() - startDate.getMonth();
+
+  if (months < 0) {
+    years -= 1;
+    months += 12;
+  }
+
+  const yearStr = years > 0 ? `${years} ${years === 1 ? "year" : "years"}` : "";
+  const monthStr = months > 0 ? `${months} ${months === 1 ? "month" : "months"}` : "";
+
+  if (yearStr && monthStr) return `${yearStr} and ${monthStr}`;
+  if (yearStr) return yearStr;
+  return monthStr || "Less than a month";
+};
+
 export const myProjects = [
   {
     id: 1,
@@ -312,45 +330,39 @@ export const mySocials = [
 
 export const experiences = [
   {
-    title: "IT Development Officer",
+    title: "IT Developer Officer",
     job: "Telkomedika",
-    date: "2024 - Now",
+    date: "Jun 2024 - Sekarang",
     contents: [
-      "Mengawasi dan memberikan arahan kepada tim developer.",
-      "Membuat dan mengembangkan aplikasi mobile.",
-      "Membuat dan mengelola database.",
-      "Mengembangkan dan membuat API.",
+      "TM Health – Platform digital layanan kesehatan berskala nasional dengan arsitektur microservices (Flutter, React.js, Nest.js, MySQL, MongoDB, n8n) yang terintegrasi dengan 500+ fasilitas kesehatan di Indonesia.",
+      "TM Hub – Company gateway platform internal menggunakan Laravel 12, MySQL, integrasi AI, SSO, dan keamanan RBAC-ACL.",
+      "BOD Watchlist – Platform internal pencatatan hasil rapat BOD dengan GM menggunakan React JS, Nest JS, MySQL, dan integrasi AI.",
     ],
   },
   {
     title: "Fullstack Developer",
     job: "Equity Life Indonesia",
-    date: "2022-2024",
+    date: "Mar 2022 - May 2024",
     contents: [
-      "Membuat standarisasi pengembangan aplikasi untuk platform mobile.",
-      "Membuat dokumentasi terkait standarisasi framework aplikasi mobile.",
-      "Menganalisa FSD dan mendetailkan requirement pengembangan aplikasi mobile.",
-      "Membuat dokumen teknis terkait pengembangan aplikasi mobile.",
-      "Mengembangkan API menggunakan Java Spring Boot dan NestJS.",
-      "Membuat timeline estimasi pengerjaan project sesuai dengan desain FSD.",
-      "Membuat API sesuai standarisasi serta timeline yang ditentukan.",
-      "Membuat dokumen teknis terkait API.",
+      "My Benefit (MyEquity App) – Pengelolaan polis asuransi jiwa berbasis Flutter, NestJS, dan MSSQL.",
+      "API SNAP BI – Pengembangan API integrasi standar SNAP BI (Bank Indonesia) untuk pembayaran klaim.",
     ],
   },
   {
     title: "Flutter Developer",
     job: "Salvus",
-    date: "2021-2022",
+    date: "Jan 2022 - Mar 2022",
     contents: [
-      "Mengembangkan aplikasi mobile menggunakan Flutter."
+      "MotoMoto – Aplikasi mobile transaksi pembayaran parkir menggunakan Flutter.",
     ],
   },
   {
     title: "Flutter Developer",
     job: "Aneka Solusi Teknologi",
-    date: "2021-2022",
+    date: "Aug 2021 - Dec 2021",
     contents: [
-      "Mengembangkan aplikasi mobile menggunakan Flutter."
+      "Mobile Service Booking Application – Aplikasi pemesanan jadwal servis kendaraan berbasis Flutter.",
+      "Technician Service Application – Aplikasi manajemen dan validasi tugas teknisi berbasis Flutter.",
     ],
   },
 ];
